@@ -1,15 +1,15 @@
 #include <PARCIAL#2.h>
 void salir();
-int menu_profesor();
-int meu_profe;
+int entrenamiento_profesor();
+int entrenamiento_profe;
 int validacion(int id_profesor, int clave);
-int validacion(int codigo_estudiante);
+int validacion(int puesto_jugador);
 void entar();
 int id_profesor;
-int menu_estudiante();
+int entrenamiento_jugador();
 int clave;
 int i,x,n;
-int codigo_estudiante;
+int puesto_jugador;
 int registrar();
 int arr[12];
 int notas();
@@ -24,24 +24,24 @@ struct profesor
 };
 struct profesor p[3]={{98756,123456},{76548,45678},{26547,09876}};
 
-struct estudiantes 
+struct jugadores 
 {
-    int codigo_estudiante;
+    int puesto_jugadores;
     int clave;
     int nota#1
     int nota#2
     int nota#3;
 };
-struct estudiantes e[3]={{30009845,09876543},{30006574,12345678},{30002356,098123657}};
+struct jugadores e[3]={{30009845,09876543},{30006574,12345678},{30002356,098123657}};
 
 int main()
 {
 
   while(1)
   (
-    int menu 
-    printf('Bienvenido colegio Liceo Alta Blanca /n');
-    printf('N°1.profesor \n N°2.Estudiante \n N°3.salir \n' );
+    int entrenamiento 
+    printf('Bienvenido escuela de futbol /n');
+    printf('N°1.profesor \n N°2.jugador \n N°3.salir \n' );
     scanf ('%d', &Inicio)
     switch (Inicio)
 
@@ -49,13 +49,13 @@ int main()
         {
             case N°1:
             INGRESO();
-            //MenuProfesor();
+            //entrenamientos();
             break;
         }
         {
             case N°2:
             INGRESO();
-            //MenuEstudiante();
+            //entrenamientos();
         }
         {
             case N°3:
@@ -90,14 +90,14 @@ int validacion(int id_profesor, int clave);
                 exit(1);
             }
         }
-        menu_profe
+        entrenamiento_profe
     }
 }
-int menu_profe
+int entrenamiento_profe
 {
     printf('N°1.Registrarce \n N°2.Consultar \n N°3.Salir \n');
     scanf
-    switch (menu_profe)
+    switch (entrenamiento_profe)
     {
         case N°1:
         {
@@ -120,13 +120,13 @@ int menu_profe
  }
 
  int Registrarce() {
-    printf('\n ingrese el codigo de estudiante \t');
-    scanf('%d',&codigo_estudiante);
-    x= validar(codigo_estudiante);
+    printf('\n ingrese el codigo de jugador \t');
+    scanf('%d',&codigo_jugador);
+    x= validar(codigo_jugador);
         
      for (i=0;i<1,i++)
      {
-        if(e[i].usuariodeingreso==codigo_estudiante)
+        if(e[i].usuariodeingreso==codigo_jugador)
         {
             return i;
             break;
@@ -149,11 +149,11 @@ int menu_profe
     }
  }
 
- int menuestudiante()
+ int entrenamientojugador()
  {
     printf('N°1. Consultar \n N°2. Promedio notas \n N°3. Salir \n');
-    scanf('%i',&menu_estudiante);
-    switch (menu_estudiante)
+    scanf('%i',&entrenamiento_jugador);
+    switch (entrenamiento_jugador)
 
       case N°1:
       {
@@ -191,7 +191,3 @@ int Tabulacion()
 }
 
  }
-
-}
-  )   
-}
